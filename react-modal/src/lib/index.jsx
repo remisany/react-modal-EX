@@ -1,3 +1,3 @@
-import TextInput from "./components/TextInput";
+import Modal from "./components/Modal";
 
-export { TextInput };
+export { Modal };
