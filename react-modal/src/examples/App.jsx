@@ -1,11 +1,34 @@
 import React from "react";
-import { TextInput } from "../lib";
+import { useState, Fragment } from "react"
 
-const App = () => (
-  <div style={{ width: 640, margin: "15px auto" }}>
-    <h1>Hello React</h1>
-    <TextInput label="Email Address" placeholder="name@example.com" />
-  </div>
-);
+//Lib
+import { Modal } from "../lib";
 
+//Style
+import "./App.css";
+
+
+function App () {
+  const [active, setActive] = useState(false)
+
+  const close = () => {
+    setActive(!active)
+  }
+
+  return (
+    <Fragment>
+      <div className = "container">
+        <h1>React Modal</h1>
+        <button onClick = {() => setActive(true)}>Save</button>
+        <Modal
+          open = {active}
+          content = "React modal is open !"
+          close = {close}
+        />
+      </div>
+    </Fragment>
+
+  )
+}
+ 
 export default App;
