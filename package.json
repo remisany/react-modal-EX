@@ -6,7 +6,7 @@
   "files": [ "dist", "README.md" ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/remisany/React-modal.git"
+    "url": "https://github.com/remisany/react-modal.git"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
